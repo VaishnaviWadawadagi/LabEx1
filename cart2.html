@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Thank you </title>
+        <style>
+        
+        .btn {
+              text-align:center;
+              color: black;
+              padding: 16px;
+              font-size: 26px;
+              border: none;
+              cursor: pointer;
+              }
+        </style>
+        <script>
+            dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+dataLayer.push({
+  event: "view_item_list",
+  ecommerce: {
+    item_list_id: "related_products",
+    item_list_name: "Related products",
+    items: [
+     {
+      item_id: "SKU_12345",
+      item_name: "Java Course",
+      affiliation: "online_course",
+      coupon: "SUMMER_FUN",
+      discount: 100,
+      index: 0,
+      item_brand: "MOOC",
+      item_category: "Inheritance",
+      item_category2: "Implement",
+      item_category3: "Overriding",
+      item_category4: "Thread",
+      item_list_id: "related_products",
+      item_list_name: "Related Products",
+      item_variant: "Online",
+      location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
+      price: 2000,
+      quantity: 1
+        }]
+  }
+});
+        </script>
+    </head>
+    <body>
+        <h1><center>Product added to the cart</h1>
+            <center><img src="addedtocart.png"></center>
+        <form action="/action_page.php">
+          <div class="btn">
+          <button><a href="purchase.html" id='P'>Purchase</a></button>
+          <button><a href="couses.html" id>Back</a></button>
+          </div>
+        </form>
+    </body>
+</html>
