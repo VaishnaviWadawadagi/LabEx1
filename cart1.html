@@ -14,6 +14,34 @@
               }
         </style>
         <script>
+            dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+dataLayer.push({
+  event: "view_item_list",
+  ecommerce: {
+    item_list_id: "related_products",
+    item_list_name: "Related products",
+    items: [
+     {
+      item_id: "ITM_12345",
+      item_name: "Data Science Course",
+      affiliation: "online_course",
+      coupon: "SUMMER_FUN",
+      discount: 100,
+      index: 0,
+      item_brand: "MOOC",
+      item_category: "Python",
+      item_category2: "ML",
+      item_category3: "DS",
+      item_category4: "CS",
+      item_list_id: "related_products",
+      item_list_name: "Related Products",
+      item_variant: "Online",
+      location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
+      price: 5000,
+      quantity: 1
+        }]
+  }
+});
         </script>
     </head>
     <body>
