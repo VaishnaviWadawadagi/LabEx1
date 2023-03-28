@@ -60,7 +60,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <img src="datascience.png"/>
         <form action="/action_page.php">
           <div class="btn">
-          <button onclick="
+          <button id="btn1" onclick="
             dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
   event: "add_to_cart",
@@ -95,8 +95,7 @@ dataLayer.push({
         <img src="java.png"/>
         <form action="/action_page.php">
           <div class="btn">
-          <button onclick="dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
-dataLayer.push({
+          <button id="btn1" onclick="dataLayer.push({
   event: "add_to_cart",
   ecommerce: {
     item_list_id: "related_products",
@@ -130,7 +129,7 @@ dataLayer.push({
         <img src="html.png"/>
         <form action="/action_page.php">
           <div class="btn">
-          <button onclick="dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+          <button id="btn1" onclick="dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
   event: "add_to_cart",
   ecommerce: {
