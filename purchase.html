@@ -20,6 +20,35 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               cursor: pointer;
               }
         </style>
+        <script>
+            dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+dataLayer.push({
+  event: "purchase",
+  ecommerce: {
+      transaction_id: "T_0123LOD5",
+      affiliation: "MOOC",
+      value: 200,
+      tax: 10,
+      shipping: 100,
+      currency: "INR",
+      items: [
+       {
+        item_id: "ST01",
+        item_name: "Data Science Course",
+        item_category: "Java",
+        price: 9.99,
+        quantity: 1
+      },
+      {
+        item_id: "ST_02",
+        item_name: "Web Analytics",
+        item_category: "Apparel",
+        price: 20.99,
+        quantity: 1
+      }]
+  }
+});
+        </script>
     </head>
     <body>
         <!-- Google Tag Manager (noscript) -->
